@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    
+
+</body>
+
+</html>
+
+<script>
+function makeBricks(small , big , goal) {
+    var sum = 0
+    var temp = small
+    while(temp--) {
+
+        sum += 1
+        if(sum == goal) return true
+    }
+    sum = 0
+    while(big--) {
+        sum += 5
+        temp = small
+        while(temp--) {
+
+                if(sum == goal) return true
+                sum += 1 
+        }
+        if(sum == goal) return true
+        sum -= small
+    }
+    return false 
+}
+makeBricks(3,1,9)
+</script>

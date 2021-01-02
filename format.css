@@ -1,0 +1,40 @@
+h1 {
+    
+    font-family: Arial;
+    font-size: 39pt;
+    color:#008000;
+}
+
+p {
+    
+    font-family: Rockwell;    
+    font-size: 15pt;
+    color: rgb(189,1,5);
+    
+}
+
+li {
+    
+    color: red;
+}
+
+
+.restaurant {
+    
+    font-family: forte;
+    font-size: 23pt;
+}
+
+#topMovie {
+    
+    font-family: impact;
+    font-size: 28pt;
+    color: lime;
+}
+
+#topRestaurant {
+    
+    font-family: Broadway;
+    font-size: 28pt;
+    color: magenta;
+}

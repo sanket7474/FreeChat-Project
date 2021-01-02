@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+img[alt*="000webhost logo"] {
+    display: none;
+}
+
+body {
+    
+    overflow-x: hidden !important;
+    background-color: transparent ;
+}
+.box {
+    margin-top: 7%;
+    height: 500px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+     box-shadow: 1px 2px 15px 1px rgba(0,0,0,0.5);
+    display: block;
+    position: relative;
+    transition: all 0.2s;
+    overflow-x: hidden;
+} 
+
+.imgs {
+    margin: 0px 0px;
+    top: 0 !important;
+    height: 100%;
+    width: 45%;
+    border: none;
+    border-radius: 10px;
+    background-color: lightblue;
+    display: inline-block;
+    position: absolute;
+   }
+.form1 {
+    
+    width: 53%;
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: 46%;
+    overflow: hidden;
+}
+.btn1 {
+    margin: 0px 5%;
+    margin-top: 60px;
+    padding: 2% 8%;
+    border-radius: 50px;
+    background-color:white;
+    display: inline-block;
+    border: none;
+/*    border:1px solid black;*/
+    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.4);
+    cursor: pointer;
+    
+}
+.btn1:hover {
+    border: none;
+    background-color:blueviolet;
+    box-shadow: 0px 0px 10px 1.5px blueviolet;  
+    transition: 0.6s;
+    color: white;
+}
+.btn1-active {
+    border: none;
+    background-color:blueviolet;
+    box-shadow: 0px 0px 10px 1.5px blueviolet; 
+    color: white;
+}
+
+.login {
+     margin: 5% 0px; 
+     height: 75%;
+     width: 100%;
+     background-color: transparent;
+     display: block;
+     animation-name: none;
+     animation-duration: 0.4s;
+     animation-delay: 0s;
+     animation-timing-function: linear;
+     overflow-x: hidden;
+}
+
+@keyframes animelogin {
+    
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+    
+}
+.reg {
+     margin: 5% 0px; 
+     height: 70%;
+     width: 100%;
+     background-color: transparent;
+     display: none;
+     animation-name: none;
+     animation-duration: 0.35s;
+     animation-delay: 0s;
+     animation-timing-function: linear;
+     overflow-x: hidden;
+}
+.login input[type="text"] {
+    font-size: 22px;
+    margin: 15% 13%;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    color: blueviolet;
+}
+
+.login input[type="text"]:focus-within {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+     color: blueviolet;
+    
+}
+ .login input[type="text"]:focus-within::placeholder {
+    
+    color: blueviolet;
+}
+ .login input[type="password"] {
+    font-size: 22px;
+    margin: 3% 13%;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    color: blueviolet;
+}
+ .login input[type="password"]:focus-within {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+      color: blueviolet;
+    
+}
+  .login input[type="password"]:focus-within::placeholder {
+    
+    color: blueviolet;
+}
+
+.reg input[type="text"] {
+    font-size: 22px;
+    margin: 4% 13%;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+     color: blueviolet;
+}
+
+
+.reg input[type="text"]:focus-within {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+     color: blueviolet;
+    
+}
+ .reg input[type="text"]:focus-within::placeholder {
+    
+    color: blueviolet;
+}
+ .reg input[type="password"] {
+    font-size: 22px;
+    margin: 4% 13%;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+      color: blueviolet;
+}
+ .reg input[type="password"]:focus-within {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+      color: blueviolet;
+    
+}
+  .reg input[type="password"]:focus-within::placeholder {
+    
+    color: blueviolet;
+}
+
+.login .btn2 {
+    margin: 5% 5%;
+    margin-left: 50%;
+    margin-top: 5%;
+    padding: 2% 8.5%;
+    border-radius: 50px;
+    background:-webkit-gradient(linear,left top,right bottom , color-stop(4%, rgba(255,0,255,1)) , color-stop(100%, rgba(0,230,255,1))); 
+    display: inline-block;
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.6);
+    transition: 0.5s;
+}
+
+.login .error {
+    
+    text-align: center;
+    color: red;
+}
+.login .btn2:hover {
+
+   
+    margin-left: 52%;
+    
+}
+
+.login .btn2:active {
+
+   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+   transform: scale(0.95);
+    
+}
+
+.reg .btn2 {
+    margin: 0px 3%;
+    margin-left: 55%;
+    margin-top: 0px;
+    padding: 2% 8%;
+    border-radius: 50px;
+   background:-webkit-gradient(linear,left top,right bottom , color-stop(4%, rgba(255,0,255,1)) , color-stop(100%, rgba(0,230,255,1))); 
+    display: inline-block;
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.6);
+    transition: 0.6s;
+    animation-name: none;
+    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    display: none;
+}
+.reg .error {
+    
+    text-align: center;
+    color: red;
+}
+@keyframes reg {
+    
+    20% {
+        
+        opacity: 0.2;
+        transform: scale(0.3);
+    }
+    40% {
+        opacity: 0.6;
+        transform: scale(0.6);
+    }
+    60% {
+        
+        opacity: 1;
+        transform: scale(1);
+
+    }
+    80% {
+        
+        opacity: 1;
+        transform: scale(1.2);
+
+    }
+    100%{
+        
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
+.reg .btn2:hover {
+
+   
+    margin-left: 57%;
+    
+}
+
+.reg .btn2:active {
+
+   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+   transform: scale(0.95);
+    
+}
+
+.msg {
+    text-align: center;
+    color:blueviolet;
+    width: 90%;
+    min-height: 50px;
+    background-color: white;   
+    border: none;
+    display: none;
+    border-radius: 5px;
+    position: relative;
+    top:70%;
+    left: -35px;
+    transition: 0.5s;
+    animation-name: none;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+
+@keyframes msg {
+    
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        
+        width: 90%;
+        opacity: 1;
+    }
+}
