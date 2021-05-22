@@ -138,7 +138,7 @@
             <div class="prof"  id ="fstp">
                 <div class="pic">
                     <div class="img">
-                        <img src="Amar.jpg" alt="">
+                        <img src="user.jpg" alt="">
                     </div>
                     <p>
 					<?php
@@ -227,7 +227,7 @@
                         
                         <div class="img">
                             
-                            <img src="Amar.jpg" alt="">                    
+                            <img src="user.jpg" alt="">                    
                         </div>
                         <div class="name">
 						
@@ -369,7 +369,7 @@
                 <div class="info" onclick="infoChange()" id = "info">
                    
                    <div class="pic" id = "pic">
-                       <img src="Amar.jpg" alt="">
+                       <img src="user.jpg" alt="">
                        
                    </div>
                     
@@ -515,7 +515,7 @@
                         
                         <div class="data"> <?php echo $msg[4]?> </div>
                         <div class="img">
-                            <img src="Amar.jpg" alt="">
+                            <img src="user.jpg" alt="">
                         </div>
                    
                         <div class="tick" id ="tick"> <i class="material-icons <?php if($msg[6] == 1) {

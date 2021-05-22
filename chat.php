@@ -69,7 +69,7 @@
         */
 		$convname= $_POST['convname'];
 		
-		$q = "select * from conv where touser = '$convname' AND fromUser='$uname' OR toUser= '$uname' AND fromuser='$convname' and userName='$uname';";
+		$q = "select * from conv where touser = '$convname' AND fromUser='$uname' OR toUser= '$uname' AND fromuser='$convname' AND userName='$uname';";
 		
 		$r = mysqli_query($con , $q);
 		
@@ -139,7 +139,7 @@
             <div class="prof"  id ="fstp">
                 <div class="pic">
                     <div class="img">
-                        <img src="Amar.jpg" alt="">
+                        <img src="user.jpg" alt="">
                     </div>
                     <p>
 					<?php
@@ -228,7 +228,7 @@
                         
                         <div class="img">
                             
-                            <img src="Amar.jpg" alt="">                    
+                            <img src="user.jpg" alt="">                    
                         </div>
                         <div class="name">
 						
@@ -373,7 +373,7 @@
                 <div class="info" onclick="infoChange()" id = "info">
                    
                    <div class="pic" id = "pic">
-                       <img src="Amar.jpg" alt="">
+                       <img src="user.jpg" alt="">
                        
                    </div>
                     
@@ -628,7 +628,7 @@ three.style.transform = "rotate(-140deg) translateY(6px)";
 </script>
 <script>
     msgs.scrollTop = msgs.scrollHeight;
-    let bool = true;
+    let lastConv = ''
     let time = setInterval("messages()" , 10);
     
     let messages = function() {
@@ -641,11 +641,13 @@ three.style.transform = "rotate(-140deg) translateY(6px)";
     obj.onreadystatechange = function() {
         
         if(this.readyState == 4 && this.status == 200) {
-            msgs.innerHTML = this.responseText;
             
-            if(bool) {
+            
+            if(lastConv != this.responseText) {
+                msgs.innerHTML = this.responseText;
                 msgs.scrollTop = msgs.scrollHeight;
-                bool = false;
+                
+                lastConv = this.responseText
             }
             
         }    

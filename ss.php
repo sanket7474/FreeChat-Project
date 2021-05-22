@@ -23,7 +23,7 @@
                    echo "<div class ='b'> <div class='msgfy'>
                         
                         <div class='img'>
-                            <img src='Sagar.jpg' alt=''>
+                            <img src='user.jpg' alt=''>
                         </div>
                         <div class='data'>  $msg[4]  </div>
                     
@@ -42,12 +42,12 @@
                         
                         <div class='data'> $msg[4] </div>
                         <div class='img'>
-                            <img src='Amar.jpg' alt=''>
+                            <img src='user.jpg' alt=''>
                         </div>
                    
                         <div class='tick' id ='tick'> <i class='material-icons";
                        if($msg[6] == 1) {
-																					echo " active' >";
+							echo " active' >";
 						}
                        else {
                            

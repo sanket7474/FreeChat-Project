@@ -157,9 +157,6 @@ include("connection.php");
         <div class="col-lg-2 col-md-2"><div class="msg" id = "msg">dsfdfd</div></div>
 
 
-    </div>
-
-
 </body>
 <script src="assets/js/login.js"></script>
 
